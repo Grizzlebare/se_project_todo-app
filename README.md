@@ -1,17 +1,17 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+Creation of simple todo list with responive interface, refactored into different components.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+Application allows users to create tasks and add due dates to them.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+Application is comprised of HTML, CSS, Javascript.
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+https://grizzlebare.github.io/se_project_todo-app/
