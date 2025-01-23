@@ -8,12 +8,9 @@ class Todo {
     this._todoCheckboxEl.addEventListener("change", () => {
       this._data.completed = !this._data.completed;
     });
-
-    this._todoElement
-      .querySelector(".todo__delete-btn")
-      .addEventListener("click", () => {
-        this._todoElement.remove();
-      });
+    this._todoDeleteBtn.addEventListener("click", () => {
+      this._todoElement.remove();
+    });
   }
 
   _generateCheckboxEl() {
@@ -44,14 +41,15 @@ class Todo {
       .cloneNode(true);
 
     const todoNameEl = this._todoElement.querySelector(".todo__name");
-    const todoDate = this._todoElement.querySelector(".todo__date");
-    const todoDeleteBtn = this._todoElement.querySelector(".todo__delete-btn");
+    this._todoDate = this._todoElement.querySelector(".todo__date");
+    this._todoDeleteBtn = this._todoElement.querySelector(".todo__delete-btn");
 
     todoNameEl.textContent = this._data.name;
-    // implement date
-    // this._dueDate();
+
     this._generateCheckboxEl();
     this._setEventListeners();
+    this._dueDate();
+
     return this._todoElement;
   }
 }
